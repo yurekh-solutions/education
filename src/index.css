@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 50% 6%;
+    --foreground: 210 40% 96%;
+
+    --card: 225 40% 10%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 225 40% 10%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 187 92% 42%;
+    --primary-foreground: 230 50% 6%;
+
+    --secondary: 225 30% 16%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 225 25% 14%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 270 70% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 225 20% 18%;
+    --input: 225 20% 18%;
+    --ring: 187 92% 42%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 225 40% 8%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 187 92% 42%;
+    --sidebar-primary-foreground: 230 50% 6%;
+    --sidebar-accent: 225 30% 16%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 225 20% 18%;
+    --sidebar-ring: 187 92% 42%;
+
+    /* Custom tokens */
+    --glass-bg: 225 40% 12% / 0.6;
+    --glass-border: 225 20% 25% / 0.3;
+    --gradient-primary: linear-gradient(135deg, hsl(187 92% 42%), hsl(270 70% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(230 50% 6%) 0%, hsl(225 40% 12%) 50%, hsl(230 50% 6%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(225 40% 12% / 0.8), hsl(225 40% 10% / 0.4));
+    --shadow-glow: 0 0 40px hsl(187 92% 42% / 0.15);
+    --shadow-card: 0 8px 32px hsl(230 50% 4% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+  }
+
+  .glass-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-card);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .gradient-border {
+    position: relative;
+    border: none;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--gradient-primary);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+/* Custom animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 3s linear infinite;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsl(var(--primary) / 0.1) 50%,
+    transparent 100%
+  );
+  background-size: 1000px 100%;
+}
