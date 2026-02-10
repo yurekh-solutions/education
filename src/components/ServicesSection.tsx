@@ -27,8 +27,8 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-16 sm:py-20 lg:py-24 relative">
-      <div className="absolute bottom-0 right-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-accent/5 blur-[150px]" />
+    <section id="services" className="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
+      <div className="absolute bottom-0 right-0 w-[200px] sm:w-[350px] lg:w-[500px] h-[200px] sm:h-[350px] lg:h-[500px] rounded-full bg-accent/5 blur-[100px] sm:blur-[150px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div

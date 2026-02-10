@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] sm:min-h-screen flex items-center overflow-hidden pt-16 sm:pt-20"
+      className="relative min-h-[85vh] sm:min-h-screen flex items-center overflow-hidden pt-16 sm:pt-20"
     >
       {/* Background */}
       <div className="absolute inset-0">
@@ -25,12 +25,12 @@ const HeroSection = () => {
       </div>
 
       {/* Floating orbs */}
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-primary/10 blur-[100px] animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-accent/10 blur-[120px] animate-pulse-glow" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-1/2 right-1/3 w-64 h-64 rounded-full bg-primary/5 blur-[80px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/4 left-0 sm:left-1/4 w-48 sm:w-72 h-48 sm:h-72 rounded-full bg-primary/10 blur-[80px] sm:blur-[100px] animate-pulse-glow" />
+      <div className="absolute bottom-1/4 right-0 sm:right-1/4 w-56 sm:w-96 h-56 sm:h-96 rounded-full bg-accent/10 blur-[80px] sm:blur-[120px] animate-pulse-glow" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/2 right-0 sm:right-1/3 w-40 sm:w-64 h-40 sm:h-64 rounded-full bg-primary/5 blur-[60px] sm:blur-[80px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl w-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
-            className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6"
+            className="font-heading text-2xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6"
             style={{ opacity: 0 }}
           >
             Master{" "}

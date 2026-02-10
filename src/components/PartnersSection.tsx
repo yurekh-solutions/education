@@ -6,7 +6,7 @@ const partners = [
 
 const PartnersSection = () => {
   return (
-    <section className="py-10 sm:py-12 lg:py-16 border-y border-border">
+    <section className="py-8 sm:py-12 lg:py-16 border-y border-border overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.p
           initial={{ opacity: 0 }}

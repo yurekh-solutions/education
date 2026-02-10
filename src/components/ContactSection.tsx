@@ -13,8 +13,8 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 lg:py-24 relative">
-      <div className="absolute bottom-0 left-1/3 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-primary/5 blur-[150px]" />
+    <section id="contact" className="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
+      <div className="absolute bottom-0 left-0 sm:left-1/3 w-[200px] sm:w-[350px] lg:w-[500px] h-[200px] sm:h-[350px] lg:h-[500px] rounded-full bg-primary/5 blur-[100px] sm:blur-[150px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
@@ -37,10 +37,10 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 max-w-5xl mx-auto">
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-2 flex flex-col gap-6"
+            className="lg:col-span-2 flex flex-col gap-4 sm:gap-6"
           >
             <div className="glass-card rounded-xl p-4 sm:p-6">
               <div className="flex items-center gap-2.5 sm:gap-3 mb-1 sm:mb-2">
@@ -103,8 +103,8 @@ const ContactSection = () => {
           {/* Form */}
           <motion.form
             onSubmit={handleSubmit}
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="lg:col-span-3 glass-card rounded-xl p-4 sm:p-6 lg:p-8"
           >

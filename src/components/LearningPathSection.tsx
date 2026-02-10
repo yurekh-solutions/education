@@ -54,11 +54,11 @@ const steps = [
 
 const LearningPathSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <section className="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-primary/5 blur-[150px]" />
-        <div className="absolute bottom-1/4 right-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-accent/5 blur-[150px]" />
+        <div className="absolute top-1/4 left-0 w-[200px] sm:w-[350px] lg:w-[500px] h-[200px] sm:h-[350px] lg:h-[500px] rounded-full bg-primary/5 blur-[100px] sm:blur-[150px]" />
+        <div className="absolute bottom-1/4 right-0 w-[200px] sm:w-[350px] lg:w-[500px] h-[200px] sm:h-[350px] lg:h-[500px] rounded-full bg-accent/5 blur-[100px] sm:blur-[150px]" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
@@ -87,11 +87,11 @@ const LearningPathSection = () => {
             {steps.map((step, i) => (
               <motion.div
                 key={step.title}
-                initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`flex flex-col lg:flex-row gap-6 items-center ${
+                className={`flex flex-col lg:flex-row gap-4 sm:gap-6 items-center ${
                   i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
                 }`}
               >
@@ -126,7 +126,7 @@ const LearningPathSection = () => {
 
                 {/* Image */}
                 <div className="flex-1 w-full">
-                  <div className="relative h-36 sm:h-44 lg:h-48 rounded-xl overflow-hidden group">
+                  <div className="relative h-32 sm:h-44 lg:h-48 rounded-xl overflow-hidden group">
                     <img
                       src={step.image}
                       alt={step.title}

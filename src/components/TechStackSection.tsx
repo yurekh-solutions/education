@@ -65,10 +65,10 @@ const techCategories = [
 
 const TechStackSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 relative overflow-hidden bg-gradient-to-b from-background via-muted/20 to-background">
+    <section className="py-12 sm:py-20 lg:py-24 relative overflow-hidden bg-gradient-to-b from-background via-muted/20 to-background">
       {/* Background effects */}
-      <div className="absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 rounded-full bg-primary/5 blur-[120px]" />
-      <div className="absolute bottom-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 rounded-full bg-accent/5 blur-[120px]" />
+      <div className="absolute top-1/4 right-0 sm:right-1/4 w-48 sm:w-96 h-48 sm:h-96 rounded-full bg-primary/5 blur-[80px] sm:blur-[120px]" />
+      <div className="absolute bottom-1/4 left-0 sm:left-1/4 w-48 sm:w-96 h-48 sm:h-96 rounded-full bg-accent/5 blur-[80px] sm:blur-[120px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div

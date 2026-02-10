@@ -63,11 +63,11 @@ const plans = [
 
 const PricingSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <section className="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
-      <div className="absolute top-1/4 left-1/4 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] rounded-full bg-primary/5 blur-[150px]" />
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] rounded-full bg-accent/5 blur-[150px]" />
+      <div className="absolute top-1/4 left-0 sm:left-1/4 w-[250px] sm:w-[400px] lg:w-[600px] h-[250px] sm:h-[400px] lg:h-[600px] rounded-full bg-primary/5 blur-[100px] sm:blur-[150px]" />
+      <div className="absolute bottom-1/4 right-0 sm:right-1/4 w-[250px] sm:w-[400px] lg:w-[600px] h-[250px] sm:h-[400px] lg:h-[600px] rounded-full bg-accent/5 blur-[100px] sm:blur-[150px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
@@ -87,7 +87,7 @@ const PricingSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 max-w-6xl mx-auto">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}

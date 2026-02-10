@@ -42,10 +42,10 @@ const galleryItems = [
 
 const GallerySection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <section className="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[400px] sm:w-[600px] lg:w-[800px] h-[400px] sm:h-[600px] lg:h-[800px] rounded-full bg-accent/5 blur-[150px]" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[250px] sm:w-[400px] lg:w-[800px] h-[250px] sm:h-[400px] lg:h-[800px] rounded-full bg-accent/5 blur-[100px] sm:blur-[150px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
@@ -73,7 +73,7 @@ const GallerySection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group relative h-56 sm:h-72 lg:h-80 rounded-xl overflow-hidden cursor-pointer"
+              className="group relative h-48 sm:h-72 lg:h-80 rounded-xl overflow-hidden cursor-pointer"
             >
               {/* Image */}
               <img

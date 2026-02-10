@@ -48,8 +48,8 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 relative">
-      <div className="absolute top-1/2 left-0 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full bg-accent/5 blur-[150px]" />
+    <section className="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
+      <div className="absolute top-1/2 left-0 w-[180px] sm:w-[300px] lg:w-[400px] h-[180px] sm:h-[300px] lg:h-[400px] rounded-full bg-accent/5 blur-[80px] sm:blur-[150px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div

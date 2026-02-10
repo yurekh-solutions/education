@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24">
+    <section className="py-12 sm:py-20 lg:py-24 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,7 +11,7 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="glass-card rounded-xl sm:rounded-2xl p-6 sm:p-10 lg:p-16 text-center relative overflow-hidden"
         >
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full bg-primary/10 blur-[120px]" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[180px] sm:w-[300px] lg:w-[400px] h-[180px] sm:h-[300px] lg:h-[400px] rounded-full bg-primary/10 blur-[80px] sm:blur-[120px]" />
           
           <div className="relative z-10">
             <h2 className="font-heading text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-3 sm:mb-4">

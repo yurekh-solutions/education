@@ -6,11 +6,11 @@ const Footer = () => {
     window.open(`https://wa.me/919136242706?text=${message}`, "_blank");
   };
   return (
-    <footer className="border-t border-border py-8 sm:py-10 lg:py-12">
+    <footer className="border-t border-border py-8 sm:py-10 lg:py-12 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mb-8 sm:mb-10">
           {/* Brand */}
-          <div className="col-span-2 sm:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
               <div className="h-7 w-7 sm:h-8 sm:w-8 rounded-lg bg-primary flex items-center justify-center font-heading font-bold text-primary-foreground text-xs sm:text-sm">
                 E
@@ -60,7 +60,7 @@ const Footer = () => {
         {/* WhatsApp Chat Button */}
         <button
           onClick={openWhatsApp}
-          className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-40 flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-3 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600 transition-all hover:scale-105"
+          className="fixed bottom-4 sm:bottom-6 right-16 sm:right-20 z-40 flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-3 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600 transition-all hover:scale-105"
           aria-label="Chat on WhatsApp"
         >
           <MessageCircle size={18} className="sm:hidden" fill="currentColor" />
@@ -68,7 +68,7 @@ const Footer = () => {
         </button>
 
         <div className="border-t border-border pt-4 sm:pt-6 text-center text-[10px] sm:text-xs text-muted-foreground">
-          © {new Date().getFullYear()} EduCore. All rights reserved.
+          © {new Date().getFullYear()} EduCore. All rights reserved. Designed & Developed by <a href="https://yurekh.com/"> YUREKHSOLUTIONS </a>
         </div>
       </div>
     </footer>

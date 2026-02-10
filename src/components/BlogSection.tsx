@@ -66,10 +66,10 @@ const blogPosts = [
 
 const BlogSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 relative overflow-hidden bg-gradient-to-b from-background via-muted/10 to-background">
+    <section className="py-12 sm:py-20 lg:py-24 relative overflow-hidden bg-gradient-to-b from-background via-muted/10 to-background">
       {/* Background */}
-      <div className="absolute top-0 right-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-primary/5 blur-[150px]" />
-      <div className="absolute bottom-0 left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-accent/5 blur-[150px]" />
+      <div className="absolute top-0 right-0 sm:right-1/4 w-[200px] sm:w-[350px] lg:w-[500px] h-[200px] sm:h-[350px] lg:h-[500px] rounded-full bg-primary/5 blur-[100px] sm:blur-[150px]" />
+      <div className="absolute bottom-0 left-0 sm:left-1/4 w-[200px] sm:w-[350px] lg:w-[500px] h-[200px] sm:h-[350px] lg:h-[500px] rounded-full bg-accent/5 blur-[100px] sm:blur-[150px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div

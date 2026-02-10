@@ -85,11 +85,11 @@ const Counter = ({ end, suffix }: { end: number; suffix: string }) => {
 
 const StatsSection = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <section className="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
-      <div className="absolute top-1/2 left-1/4 w-64 sm:w-96 h-64 sm:h-96 rounded-full bg-primary/10 blur-[120px]" />
-      <div className="absolute bottom-0 right-1/4 w-64 sm:w-96 h-64 sm:h-96 rounded-full bg-accent/10 blur-[120px]" />
+      <div className="absolute top-1/2 left-0 sm:left-1/4 w-48 sm:w-96 h-48 sm:h-96 rounded-full bg-primary/10 blur-[80px] sm:blur-[120px]" />
+      <div className="absolute bottom-0 right-0 sm:right-1/4 w-48 sm:w-96 h-48 sm:h-96 rounded-full bg-accent/10 blur-[80px] sm:blur-[120px]" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
@@ -110,7 +110,7 @@ const StatsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-6">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
