@@ -102,18 +102,14 @@ const AIMachineLearning = () => {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex gap-4 mt-8">
                 <Link 
                   to="/enroll?course=AI%20%26%20Machine%20Learning"
-                  className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity glow flex items-center gap-2"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity glow"
                 >
-                  <Sparkles size={18} />
+                  <Sparkles size={20} />
                   Enroll Now - ₹14,999
                 </Link>
-                <button className="border border-border bg-secondary/50 px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors flex items-center gap-2">
-                  <Play size={18} />
-                  Watch Intro
-                </button>
               </div>
             </motion.div>
 

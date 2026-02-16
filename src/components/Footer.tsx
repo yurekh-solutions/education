@@ -1,9 +1,10 @@
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import eduLogo from "@/assets/edu.jpeg";
 
 const Footer = () => {
   const openWhatsApp = () => {
     const message = encodeURIComponent("Hi! I'm interested in learning more about EduCore courses.");
-    window.open(`https://wa.me/919136242706?text=${message}`, "_blank");
+    window.open(`https://wa.me/919090822772?text=${message}`, "_blank");
   };
   return (
     <footer className="border-t border-border py-8 sm:py-10 lg:py-12 overflow-hidden">
@@ -12,13 +13,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
-              <div className="h-7 w-7 sm:h-8 sm:w-8 rounded-lg bg-primary flex items-center justify-center font-heading font-bold text-primary-foreground text-xs sm:text-sm">
-                E
-              </div>
+              <img src={eduLogo} alt="EduCore" className="h-7 w-auto sm:h-8 rounded-lg" />
               <span className="font-heading text-base sm:text-lg font-bold gradient-text">EduCore</span>
             </div>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Empowering the next generation of tech professionals with industry-ready skills.
+              Empowering students with future-ready digital skills through practical, industry-aligned training.
             </p>
           </div>
 
@@ -38,7 +37,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold mb-2 sm:mb-4 text-sm sm:text-base">Top Courses</h4>
             <div className="flex flex-col gap-1.5 sm:gap-2">
-              {["AI & Machine Learning", "Full Stack Development", "UI/UX Design", "Mobile Development"].map((c) => (
+              {["Full Web Development", "UI/UX Design", "JavaScript Essentials", "Graphic Design"].map((c) => (
                 <a key={c} href="#courses" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                   {c}
                 </a>
@@ -50,8 +49,8 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold mb-2 sm:mb-4 text-sm sm:text-base">Contact</h4>
             <div className="flex flex-col gap-2 sm:gap-3 text-xs sm:text-sm text-muted-foreground">
-              <span className="flex items-center gap-2"><Mail size={12} className="text-primary sm:hidden" /><Mail size={14} className="text-primary hidden sm:block" /> hello@educore.in</span>
-              <span className="flex items-center gap-2"><Phone size={12} className="text-primary sm:hidden" /><Phone size={14} className="text-primary hidden sm:block" /> +91 98765 43210</span>
+              <span className="flex items-center gap-2"><Mail size={12} className="text-primary sm:hidden" /><Mail size={14} className="text-primary hidden sm:block" /> connect.educore@gmail.com</span>
+              <span className="flex items-center gap-2"><Phone size={12} className="text-primary sm:hidden" /><Phone size={14} className="text-primary hidden sm:block" /> +91 90820 25722</span>
               <span className="flex items-center gap-2"><MapPin size={12} className="text-primary sm:hidden" /><MapPin size={14} className="text-primary hidden sm:block" /> India</span>
             </div>
           </div>
@@ -68,7 +67,7 @@ const Footer = () => {
         </button>
 
         <div className="border-t border-border pt-4 sm:pt-6 text-center text-[10px] sm:text-xs text-muted-foreground">
-          © {new Date().getFullYear()} EduCore. All rights reserved. Designed & Developed by <a href="https://yurekh.com/"> YUREKHSOLUTIONS </a>
+          © {new Date().getFullYear()} EduCore. All rights reserved.
         </div>
       </div>
     </footer>

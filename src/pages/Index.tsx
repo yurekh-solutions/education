@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import PartnersSection from "@/components/PartnersSection";
 import StatsSection from "@/components/StatsSection";
 import CoursesSection from "@/components/CoursesSection";
+import IndustryReadyCourses from "@/components/IndustryReadyCourses";
 import LearningPathSection from "@/components/LearningPathSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import TechStackSection from "@/components/TechStackSection";
@@ -34,6 +35,7 @@ const Index = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -41,6 +43,7 @@ const Index = () => {
       <PartnersSection />
       <StatsSection />
       <CoursesSection />
+      <IndustryReadyCourses />
       <LearningPathSection />
       <HowItWorksSection />
       <TechStackSection />

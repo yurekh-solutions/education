@@ -50,7 +50,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-heading font-bold text-xs sm:text-sm">Email Us</p>
-                  <p className="text-[10px] sm:text-xs text-muted-foreground">hello@educore.in</p>
+                  <p className="text-[10px] sm:text-xs text-muted-foreground">connect.educore@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -63,13 +63,13 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-heading font-bold text-xs sm:text-sm">Call Us</p>
-                  <p className="text-[10px] sm:text-xs text-muted-foreground">+91 98765 43210</p>
+                  <p className="text-[10px] sm:text-xs text-muted-foreground">+91 90820 25722</p>
                 </div>
               </div>
             </div>
 
             <a 
-              href="https://wa.me/919136242706" 
+              href="https://wa.me/919090822772" 
               target="_blank" 
               rel="noopener noreferrer"
               className="glass-card rounded-xl p-4 sm:p-6 block hover:border-green-500/50 transition-colors group"
@@ -81,7 +81,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-heading font-bold text-xs sm:text-sm">WhatsApp</p>
-                  <p className="text-[10px] sm:text-xs text-muted-foreground">+91 91362 42706</p>
+                  <p className="text-[10px] sm:text-xs text-muted-foreground">+91 90820 25722</p>
                 </div>
               </div>
             </a>

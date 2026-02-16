@@ -7,11 +7,15 @@ import Footer from "@/components/Footer";
 import enrollImage from "@/assets/image.png";
 
 const courses = [
-  "AI & Machine Learning",
+  "Computer Fundamentals",
+  "HTML & CSS",
+  "JavaScript",
+  "React",
   "Full Stack Development",
-  "Frontend Mastery",
-  "Backend Engineering",
+  "Graphic Design",
   "UI/UX Design",
+  "Video Editing",
+  "Frontend Development",
   "Mobile App Development",
 ];
 
@@ -56,7 +60,7 @@ _Sent from EduCore Website_
     `.trim();
 
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappUrl = `https://wa.me/919136242706?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/919090822772?text=${encodedMessage}`;
 
     setTimeout(() => {
       window.open(whatsappUrl, "_blank");
@@ -94,7 +98,7 @@ _Sent from EduCore Website_
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a
-                  href="https://wa.me/919136242706"
+                  href="https://wa.me/919090822772"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
@@ -179,7 +183,7 @@ _Sent from EduCore Website_
                     </div>
                     <div>
                       <p className="font-heading font-bold text-sm">WhatsApp Support</p>
-                      <p className="text-xs text-muted-foreground">+91 91362 42706</p>
+                      <p className="text-xs text-muted-foreground">+91 90820 25722</p>
                     </div>
                   </div>
                 </div>
@@ -353,7 +357,7 @@ _Sent from EduCore Website_
               
               <div className="flex items-center justify-center gap-2 text-xs text-center text-muted-foreground mt-4">
                 <MessageCircle size={14} className="text-green-500" />
-                <span>You will be redirected to WhatsApp (+91 91362 42706)</span>
+                <span>You will be redirected to WhatsApp (+91 90820 25722)</span>
               </div>
             </form>
           </motion.div>

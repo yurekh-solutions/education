@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
+import eduLogo from "@/assets/edu.jpeg";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -29,9 +30,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <div className="h-9 w-9 rounded-lg bg-primary flex items-center justify-center font-heading font-bold text-primary-foreground text-lg flex-shrink-0">
-            E
-          </div>
+          <img src={eduLogo} alt="EduCore" className="h-9 w-auto rounded-lg" />
           <span className="font-heading text-lg sm:text-xl font-bold gradient-text whitespace-nowrap">EduCore</span>
         </Link>
 

@@ -37,7 +37,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-medium text-primary mb-6">
-              🚀 New Batch Starting Soon
+              🎓 Empower Your Digital Future
             </span>
           </motion.div>
 
@@ -49,9 +49,9 @@ const HeroSection = () => {
             style={{ opacity: 0 }}
           >
             Master{" "}
-            <span className="gradient-text">AI & Full Stack</span>
+            <span className="gradient-text">Digital Skills</span>
             <br className="hidden sm:block" />
-            Development
+            for Every Student
           </motion.h1>
 
           <motion.p
@@ -60,9 +60,9 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg text-muted-foreground max-w-xl mb-6 sm:mb-8"
           >
-            Industry-ready courses designed to transform you into a skilled
-            developer. Learn from experts, build real projects, and land your
-            dream tech job.
+            Practical training in Technology, Design, Development & Finance.
+            Hands-on learning with real projects. Build your portfolio and
+            launch your career.
           </motion.p>
 
           <motion.div
@@ -75,7 +75,7 @@ const HeroSection = () => {
               href="#courses"
               className="group inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 sm:px-6 py-2.5 sm:py-3 font-semibold text-primary-foreground hover:opacity-90 transition-opacity glow text-sm sm:text-base"
             >
-              Explore Courses
+              Start Learning
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
