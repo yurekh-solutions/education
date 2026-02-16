@@ -72,7 +72,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10 sm:mb-14"
           >
             <a
-              href="#courses"
+              href="/enroll"
               className="group inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 sm:px-6 py-2.5 sm:py-3 font-semibold text-primary-foreground hover:opacity-90 transition-opacity glow text-sm sm:text-base"
             >
               Start Learning

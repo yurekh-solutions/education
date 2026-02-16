@@ -153,7 +153,7 @@ const LearningPathSection = () => {
           className="text-center mt-10 sm:mt-12 lg:mt-16"
         >
           <a
-            href="#courses"
+            href="/enroll"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 sm:px-6 lg:px-8 py-2.5 sm:py-3 font-semibold text-primary-foreground hover:opacity-90 transition-opacity glow text-sm sm:text-base"
           >
             Start Your Journey Today

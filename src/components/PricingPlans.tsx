@@ -236,7 +236,7 @@ const PricingPlans = () => {
             Not sure which course to choose?
           </p>
           <a
-            href="#contact"
+            href="/enroll"
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary/20 border border-primary/50 px-6 sm:px-8 py-3 sm:py-4 font-semibold text-primary hover:bg-primary/30 transition-all hover:border-primary"
           >
             Chat with Our Advisors
