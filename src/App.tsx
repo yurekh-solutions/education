@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Enroll from "./pages/Enroll";
 import ComputerFundamentals from "./pages/courses/ComputerFundamentals";
+import AIMachineLearning from "./pages/courses/AIMachineLearning";
+import FrontendMastery from "./pages/courses/FrontendMastery";
 import HtmlCSS from "./pages/courses/HtmlCSS";
 import JavaScriptEssentials from "./pages/courses/JavaScriptEssentials";
 import ReactDevelopment from "./pages/courses/ReactDevelopment";
@@ -31,6 +33,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/enroll" element={<Enroll />} />
           <Route path="/courses/computer-fundamentals" element={<ComputerFundamentals />} />
+          <Route path="/courses/ai-machine-learning" element={<AIMachineLearning />} />
+          <Route path="/courses/frontend-mastery" element={<FrontendMastery />} />
           <Route path="/courses/html-css" element={<HtmlCSS />} />
           <Route path="/courses/javascript-essentials" element={<JavaScriptEssentials />} />
           <Route path="/courses/react-development" element={<ReactDevelopment />} />
