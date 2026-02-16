@@ -67,7 +67,7 @@ const Footer = () => {
         </button>
 
         <div className="border-t border-border pt-4 sm:pt-6 text-center text-[10px] sm:text-xs text-muted-foreground">
-          © {new Date().getFullYear()} EduCore. All rights reserved.
+          © {new Date().getFullYear()} EduCore. All rights reserved. Designed & Developed by <a href="https://yurekh.com/"> YUREKHSOLUTIONS </a>
         </div>
       </div>
     </footer>
